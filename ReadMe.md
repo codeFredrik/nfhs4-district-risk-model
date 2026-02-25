@@ -85,7 +85,7 @@ nfhs4-district-risk-model/
 ## Setup
 
 ```bash
-git clone https://github.com/your-username/nfhs4-district-risk-model.git
+git clone https://github.com/codeFredrik/nfhs4-district-risk-model.git
 cd nfhs4-district-risk-model
 
 python -m venv venv
