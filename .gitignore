@@ -1,0 +1,21 @@
+# Raw data — too large
+data/raw/
+
+# Processed CSVs — too large
+data/processed/*.csv
+
+# JSON feature list
+!data/processed/selected_features.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# Virtual environment
+venv/
+
+# OS files
+.DS_Store
+Thumbs.db
