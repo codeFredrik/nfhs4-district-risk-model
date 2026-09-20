@@ -1,11 +1,18 @@
 # Raw data — too large
+Data/raw/
 data/raw/
 
 # Processed CSVs — too large
+Data/processed/*.csv
 data/processed/*.csv
 
 # JSON feature list
+!Data/processed/selected_features.json
 !data/processed/selected_features.json
+
+# Generated model artifacts
+Data/processed/*.pkl
+Outputs/models/
 
 # Python
 __pycache__/

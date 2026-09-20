@@ -58,11 +58,11 @@ factsheet Excel file from the IIPS portal and place it at
 ```
 nfhs4-district-risk-model/
 │
-├── data/
+├── Data/
 │   ├── raw/                        # Original NFHS-4 Excel (not tracked)
 │   ├── processed/                  # Cleaned and engineered datasets
 │
-├── notebooks/
+├── Notebooks/
 │   ├── 1_Data_cleaning.ipynb
 │   ├── 2_EDA_and_visualization.ipynb
 │   ├── 3_Feature_engineering.ipynb
@@ -70,7 +70,7 @@ nfhs4-district-risk-model/
 │   ├── 5_Clustering_segmentation.ipynb
 │   └── 6_Policy_interpretation.ipynb
 │
-├── outputs/
+├── Outputs/
 │   ├── figures/
 │   ├── models/
 │   └── reports/
@@ -94,7 +94,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-Run notebooks in order from `01` through `06` using `jupyter lab`.
+Run notebooks in order from `1` through `6` using `jupyter lab`.
 
 ---
 
