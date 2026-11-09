@@ -1,0 +1,49 @@
+{
+  "regression": {
+    "OLS": {
+      "test_r2": 0.671,
+      "test_rmse": 5.9907,
+      "test_mae": 4.8425,
+      "cv_r2_mean": 0.5608,
+      "cv_r2_std": 0.0446
+    },
+    "Ridge": {
+      "test_r2": 0.6725,
+      "test_rmse": 5.9772,
+      "test_mae": 4.8371,
+      "cv_r2_mean": 0.5669,
+      "cv_r2_std": 0.048
+    },
+    "Lasso": {
+      "test_r2": 0.674,
+      "test_rmse": 5.9627,
+      "test_mae": 4.8518,
+      "cv_r2_mean": 0.5708,
+      "cv_r2_std": 0.0469
+    },
+    "RandomForest": {
+      "test_r2": 0.6964,
+      "test_rmse": 5.7549,
+      "test_mae": 4.6879,
+      "cv_r2_mean": 0.6104,
+      "cv_r2_std": 0.0606
+    }
+  },
+  "clustering": {
+    "silhouette_score": 0.2607,
+    "tier_counts": {
+      "Tier 1": 296,
+      "Tier 3": 243,
+      "Tier 2": 68
+    },
+    "tier_stunting_means": {
+      "Tier 1": 30.83,
+      "Tier 2": 33.57,
+      "Tier 3": 43.8
+    },
+    "pca_variance_explained": [
+      0.4069,
+      0.1327
+    ]
+  }
+}

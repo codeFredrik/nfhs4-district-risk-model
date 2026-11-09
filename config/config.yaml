@@ -1,0 +1,32 @@
+paths:
+  raw_data: "Data/raw/india-nfhs4-final.xlsx"
+  processed_dir: "Data/processed"
+  processed_data: "Data/processed/nfhs4_clean.csv"
+  final_analysis: "Outputs/reports/nfhs4_complete_analysis.csv"
+  priority_districts: "Outputs/reports/priority_districts.csv"
+  metrics_json: "Outputs/reports/metrics.json"
+  models_dir: "Outputs/models"
+  figures_dir: "Outputs/figures"
+  reports_dir: "Outputs/reports"
+
+pipeline:
+  seed: 42
+  test_size: 0.2
+  k: 3
+  missing_threshold: 0.40
+  target: "stunting"
+
+models:
+  ridge_cv_alphas:
+    start: -2
+    stop: 4
+    num: 100
+  lasso_cv_alphas:
+    start: -3
+    stop: 2
+    num: 100
+  rf:
+    n_estimators: 300
+    min_samples_leaf: 5
+    random_state: 42
+    n_jobs: -1

@@ -1,28 +1,38 @@
-# Raw data — too large
+# Raw data
 Data/raw/
 data/raw/
 
-# Processed CSVs — too large
-Data/processed/*.csv
-data/processed/*.csv
+# Model and scaler artifacts
+*.pkl
+Outputs/models/*.pkl
+outputs/models/*.pkl
 
-# JSON feature list
-!Data/processed/selected_features.json
-!data/processed/selected_features.json
-
-# Generated model artifacts
-Data/processed/*.pkl
-Outputs/models/
-
-# Python
+# Python artifacts
 __pycache__/
-*.pyc
-*.pyo
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+src/*.egg-info/
+
+# Geospatial downloaded boundary files (GADM redistribution compliance)
+Data/geo/*.geojson
+Data/geo/india_districts.geojson
+
+# Jupyter
 .ipynb_checkpoints/
 
-# Virtual environment
+# Virtual environments
 venv/
+.venv/
+env/
+.env/
 
-# OS files
+# OS and editor files
 .DS_Store
 Thumbs.db
+.vscode/
+.idea/

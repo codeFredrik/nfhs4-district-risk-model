@@ -1,0 +1,170 @@
+composites:
+  wash_score:
+  - hh_sanitation
+  - hh_clean_water
+  - hh_clean_fuel
+  empowerment_score:
+  - women_literacy
+  - women_10yr_school
+  - female_school_att
+  healthcare_score:
+  - institutional_births
+  - full_anc
+  - anc_4visits
+  - anc_first_trim
+  - postnatal_care
+  - skilled_birth_att
+  immunization_score:
+  - fully_immunized
+  - vaccine_bcg
+  - vaccine_polio
+  - vaccine_dpt
+  - vaccine_measles
+  nutrition_deprivation:
+  - women_low_bmi
+  - men_low_bmi
+  - anaemia_women_all
+  - anaemia_men
+  wealth_proxy:
+  - hh_electricity
+  - hh_clean_fuel
+  - hh_iodized_salt
+  - hh_health_insurance
+  fertility_risk:
+  - child_marriage
+  - teenage_pregnancy
+  - pct_below_15yrs
+standalone_features:
+- ifa_100days
+- early_breastfeed
+- excl_breastfeed
+- vitamin_a
+- diarrhoea_prev
+- oop_delivery_cost
+- birth_registration
+- unmet_need_total
+selected_features:
+- wash_score
+- empowerment_score
+- healthcare_score
+- immunization_score
+- nutrition_deprivation
+- wealth_proxy
+- fertility_risk
+- ifa_100days
+- early_breastfeed
+- excl_breastfeed
+- vitamin_a
+- diarrhoea_prev
+- oop_delivery_cost
+- birth_registration
+- unmet_need_total
+leakage_columns:
+- wasting
+- severe_wasting
+- underweight
+- anaemia_children
+- adequate_diet_total
+- adequate_diet_bf
+id_columns:
+- state
+- district
+- rural_urban
+- households
+- women
+- men
+rename_map:
+  state: state
+  district: district
+  households: households
+  women: women
+  men: men
+  ruralurban_classification: rural_urban
+  population_female_age_6_years_and_above_who_ever_attended_school: female_school_att
+  population_below_age_15_years: pct_below_15yrs
+  sex_ratio_of_the_total_population_females_per_1000_males: sex_ratio
+  sex_ratio_at_birth_for_children_born_in_the_last_five_years_females_per_1000_males: sex_ratio_birth
+  children_under_age_5_years_whose_birth_was_registered: birth_registration
+  households_with_electricity: hh_electricity
+  households_with_an_improved_drinkingwater_source1: hh_clean_water
+  households_using_improved_sanitation_facility2: hh_sanitation
+  households_using_clean_fuel_for_cooking3: hh_clean_fuel
+  households_using_iodized_salt: hh_iodized_salt
+  households_with_any_usual_member_covered_by_a_health_scheme_or_health_insurance: hh_health_insurance
+  women_who_are_literate: women_literacy
+  men_who_are_literate: men_literacy
+  women_with_10_or_more_years_of_schooling: women_10yr_school
+  women_age_2024_years_married_before_age_18_years: child_marriage
+  women_age_1519_years_who_were_already_mothers_or_pregnant_at_the_time_of_the_survey: teenage_pregnancy
+  any_method4: contraceptive_any
+  any_modern_method4: contraceptive_modern
+  female_sterilization: female_sterilization
+  male_sterilization: male_sterilization
+  iudppiud: iud_use
+  pill: pill_use
+  condom: condom_use
+  total_unmet_need: unmet_need_total
+  unmet_need_for_spacing: unmet_need_spacing
+  health_worker_ever_talked_to_female_nonusers_about_family_planning: fp_hw_talk
+  current_users_ever_told_about_side_effects_of_current_method6: fp_side_effects
+  mothers_who_had_antenatal_checkup_in_the_first_trimester: anc_first_trim
+  mothers_who_had_at_least_4_antenatal_care_visits: anc_4visits
+  mothers_whose_last_birth_was_protected_against_neonatal_tetanus7: tetanus_protection
+  mothers_who_consumed_iron_folic_acid_for_100_days_or_more_when_they_were_pregnant: ifa_100days
+  mothers_who_had_full_antenatal_care8: full_anc
+  registered_pregnancies_for_which_the_mother_received_mother_and_child_protection_mcp_card: mcp_card
+  mothers_who_received_postnatal_care_from_a_doctornurselhvanmmidwifeother_health_personnel_within_2_days_of_delivery: postnatal_care
+  mothers_who_received_financial_assistance_under_janani_suraksha_yojana_jsy_for_births_delivered_in_an_institution: jsy_assistance
+  average_out_of_pocket_expenditure_per_delivery_in_public_health_facility_rs: oop_delivery_cost
+  children_born_at_home_who_were_taken_to_a_health_facility_for_checkup_within_24_hours_of_birth: home_birth_checkup
+  ? children_who_received_a_health_check_after_birth_from_a_doctornurselhvanm_midwifeother_health_personnel_within_2_days_of_birth
+  : newborn_checkup
+  institutional_births: institutional_births
+  institutional_births_in_public_facility: births_public
+  home_delivery_conducted_by_skilled_health_personnel_out_of_total_deliveries: skilled_home_del
+  births_assisted_by_a_doctornurselhvanmother_health_personnel: skilled_birth_att
+  births_delivered_by_caesarean_section: caesarean_total
+  births_in_a_private_health_facility_delivered_by_caesarean_section: caesarean_private
+  births_in_a_public_health_facility_delivered_by_caesarean_section: caesarean_public
+  children_age_1223_months_fully_immunized_bcg_measles_and_3_doses_each_of_polio_and_dpt: fully_immunized
+  children_age_1223_months_who_have_received_bcg: vaccine_bcg
+  children_age_1223_months_who_have_received_3_doses_of_polio_vaccine: vaccine_polio
+  children_age_1223_months_who_have_received_3_doses_of_dpt_vaccine: vaccine_dpt
+  children_age_1223_months_who_have_received_measles_vaccine: vaccine_measles
+  children_age_1223_months_who_have_received_3_doses_of_hepatitis_b_vaccine: vaccine_hepb
+  children_age_959_months_who_received_a_vitamin_a_dose_in_last_6_months: vitamin_a
+  children_age_1223_months_who_received_most_of_the_vaccinations_in_public_health_facility: vacc_public
+  children_age_1223_months_who_received_most_of_the_vaccinations_in_private_health_facility: vacc_private
+  prevalence_of_diarrhoea_reported_in_the_last_2_weeks_preceding_the_survey: diarrhoea_prev
+  prevalence_of_symptoms_of_acute_respiratory_infection_ari_in_the_last_2_weeks_preceding_the_survey: ari_prev
+  children_with_fever_or_symptoms_of_ari_in_the_last_2_weeks_preceding_the_survey_taken_to_a_health_facility: ari_facility_visit
+  children_under_age_3_years_breastfed_within_one_hour_of_birth9: early_breastfeed
+  children_under_age_6_months_exclusively_breastfed10: excl_breastfeed
+  breastfeeding_children_age_623_months_receiving_an_adequate_diet1011: adequate_diet_bf
+  total_children_age_623_months_receiving_an_adequate_diet1011: adequate_diet_total
+  children_under_5_years_who_are_stunted_heightforage12: stunting
+  children_under_5_years_who_are_wasted_weightforheight12: wasting
+  children_under_5_years_who_are_severely_wasted_weightforheight13: severe_wasting
+  children_under_5_years_who_are_underweight_weightforage12: underweight
+  women_whose_body_mass_index_bmi_is_below_normal_bmi_185_kgm214: women_low_bmi
+  men_whose_body_mass_index_bmi_is_below_normal_bmi_185_kgm2: men_low_bmi
+  women_who_are_overweight_or_obese_bmi_250_kgm214: women_overweight
+  men_who_are_overweight_or_obese_bmi_250_kgm2: men_overweight
+  children_age_659_months_who_are_anaemic_110_gdl: anaemia_children
+  nonpregnant_women_age_1549_years_who_are_anaemic_120_gdl: anaemia_women_np
+  pregnant_women_age_1549_years_who_are_anaemic_110_gdl: anaemia_women_p
+  all_women_age_1549_years_who_are_anaemic: anaemia_women_all
+  men_age_1549_years_who_are_anaemic_130_gdl: anaemia_men
+  women_blood_sugar_level_high_140_mgdl: bs_high_women
+  women_blood_sugar_level_very_high_160_mgdl: bs_vhigh_women
+  men_blood_sugar_level_high_140_mgdl: bs_high_men
+  men_blood_sugar_level_very_high_160_mgdl: bs_vhigh_men
+  women_slightly_above_normal_systolic_140159_mm_of_hg_andor_diastolic_9099_mm_of_hg: bp_mild_women
+  women_moderately_high_systolic_160179_mm_of_hg_andor_diastolic_100109_mm_of_hg: bp_mod_women
+  women_very_high_systolic_180_mm_of_hg_andor_diastolic_110_mm_of_hg: bp_sev_women
+  men_slightly_above_normal_systolic_140159_mm_of_hg_andor_diastolic_9099_mm_of_hg: bp_mild_men
+  men_moderately_high_systolic_160179_mm_of_hg_andor_diastolic_100109_mm_of_hg: bp_mod_men
+  men_very_high_systolic_180_mm_of_hg_andor_diastolic_110_mm_of_hg: bp_sev_men
+  cervix: cancer_cervix
+  breast: cancer_breast
+  oral_cavity: cancer_oral
